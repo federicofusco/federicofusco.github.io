@@ -1,0 +1,337 @@
+/* General */
+body, html {
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  color: #484848;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+/* Section One */
+div.section-one-container {
+  background-color: #ffffff;
+  padding: 0%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+  
+    /* Login Image */
+    img.login-image {
+      width: 100%;
+      height: auto;
+      margin: 3rem;
+    }
+
+    /* Discord Widget */
+    div.widget-container {
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding-left: 12.5%;
+      padding-right: 12.5%;
+    }
+
+    iframe.discord-widget {
+      align: center;
+      width: 100%;
+      height: 100%;
+    }
+    
+/* Section 2 */
+div.section-two-container {
+  background-color: #f1f3fe;
+  align-items: center;
+  padding: 0%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+    /* Github Image */
+    img.github-image {
+      width: 100%;
+      height: auto;
+    }
+    
+    /* Section Two Text Container */
+    div.section-two-text {
+      text-align: center;
+      width: 100%;
+      padding: 0%;
+      padding-top: 2.5rem;
+      padding-bottom: 2rem;
+    }
+
+    div.lang-container {
+      width: auto;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    
+    div.html-logo-container {
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 50%;
+      border-color: #F16529;
+      background-color: transparent;
+      color: #F16529;
+      font-size: 100px;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+    
+    div.html-logo-container:hover {
+      background-color: #F16529;
+      color: #FFFFFF;
+    }
+    
+    div.css-logo-container {
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 50%;
+      border-color: #2965F1;
+      background-color: transparent;
+      color: #2965F1;
+      font-size: 100px;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+    
+    div.css-logo-container:hover {
+      background-color: #2965F1;
+      color: #FFFFFF;
+    }
+    
+    div.lang-div {
+      padding: 3rem;
+    }
+    
+    div.js-logo-container {
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 50%;
+      border-color: #F0DB4F;
+      background-color: transparent;
+      color: #F0DB4F;
+      font-size: 100px;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+    
+    div.js-logo-container:hover {
+      background-color: #F0DB4F;
+      color: #FFFFFF;
+    }
+    
+    div.node-logo-container {
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 50%;
+      border-color: #3C873A;
+      background-color: transparent;
+      color: #3C873A;
+      font-size: 100px;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+    
+    div.node-logo-container:hover {
+      background-color: #3C873A;
+      color: #FFFFFF;
+    }
+    
+    div.discord-logo-container {
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 50%;
+      border-color: #738ADB;
+      background-color: transparent;
+      color: #738ADB;
+      font-size: 100px;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+    
+    div.discord-logo-container:hover {
+      background-color: #738ADB;
+      color: #FFFFFF;
+    }
+    
+    div.github-logo-container {
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 50%;
+      border-color: #000000;
+      background-color: transparent;
+      color: #000000;
+      font-size: 100px;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+    
+    div.github-logo-container:hover {
+      background-color: #000000;
+      color: #FFFFFF;
+    }
+    
+    div.php-logo-container {
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 50%;
+      border-color: #787CB5;
+      background-color: transparent;
+      color: #787CB5;
+      font-size: 100px;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+    
+    div.php-logo-container:hover {
+      background-color: #787CB5;
+      color: #FFFFFF;
+    }
+    
+    div.bootstrap-logo-container {
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 50%;
+      border-color: #602C50;
+      background-color: transparent;
+      color: #602C50;
+      font-size: 100px;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+    
+    div.bootstrap-logo-container:hover {
+      background-color: #602C50;
+      color: #FFFFFF;
+    }
+    
+    div.button-container {
+      align-items: center;
+      text-align: center;
+    }
+    
+    button.load-button {
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 20px;
+      border-color: #000000;
+      background-color: transparent;
+      width: 150px;
+      height: 40px;
+      color: #6300e4;
+      border-color: #6300e4;
+      transition: 0.4s;
+    }
+    
+    button.load-button:hover {
+      background-color: #6300e4;
+      color: #FFFFFF;
+    }
+    
+/* Section Three */
+div.section-three-container {
+  width: 100%;
+  padding: 0%;
+  margin: 0;
+  background-color: #141c3a;
+  color: #ffffff;
+}
+
+    img.projects-image {
+      width: 100%;
+      height: auto;
+      padding: 0%;
+      margin: 0%;
+    }
+
+    div.project-card {
+      width: 30%;
+      height: auto;
+      margin-bottom: 3rem;
+      margin: 1.65%;
+    }
+    
+    h3.project-name {
+      color: #ffffff;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      font-weight: 400;
+      text-align: center;
+    }
+    
+    hr.card-divider {
+      border-color: #ffffff;
+      text-align: center;
+      width: 90%;
+      border-width: 3px;
+    }
+    
+    i.js {
+      color: #F0DB4F;
+      font-size: 20px;
+    }
+    
+    i.discord {
+      color: #738ADB;
+      font-size: 20px;
+    }
+    
+    i.html {
+      color: #F16529;
+      font-size: 20px;
+    }
+    
+    i.css {
+      color: #2965F1;
+      font-size: 20px;
+    }
+    
+    i.nodejs {
+      color: #3C873A;
+      font-size: 20px;
+    }
+    
+    p.lang {
+      padding-left: 6%;
+      padding-right: 6%; 
+    }
+    
+    p.card-description {
+      padding-left: 6%;
+      padding-right: 6%;
+      font-weight: 300;
+    }
+    
+    a:active {
+      text-decoration: none;
+    }
