@@ -10,6 +10,8 @@
     <meta name="keywords" content="Official, Federico Fusco, Github, HTML, PHP, JS, SQL, CSS, Discord.js, Node.js">
     <meta name="author" content="Federico Fusco">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Web Icon -->
+    <link href="img/github.png" rel="icon" >
 
     <!-- CSS Files -->
     <link href="css/index.css" type="text/css" rel="stylesheet">
@@ -18,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
     <!-- JS Files -->
+    <script src="js/index.js"></script>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -38,7 +41,7 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed">
      <a class="navbar-brand" href="#">Federico Fusco</a>
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
@@ -67,10 +70,10 @@
 
         <div class="col">
           <div class="widget-container">
-            <iframe src="https://discordapp.com/widget?id=702894631561724015&theme=dark" class="discord-widget" allowtransparency="true" frameborder="0">
+            <iframe src="https://discordapp.com/widget?id=702894631561724015&theme=dark" onmouseover="hoverDiscordWidget()" onmouseout="leaveDiscordWidget()" id="discord-widget" class="discord-widget" allowtransparency="true" frameborder="0">
             </iframe>
-            <div class="discord-findme">
-              <h3 class="discord-findme">Find me:<br /><img src="img/profile.jpg" class="dev-profile" alt="fede4961's Profile Picture" /> fede4961#1097</h3>
+            <div class="discord-findme" id="findme-widget" onmouseover="hoverFindMeWidget()" onmouseout="leaveFindMeWidget()">
+              <h4 class="discord-findme"><img src="img/profile.jpg" class="dev-profile" alt="fede4961's Profile Picture" /> fede4961#1097</h4>
             </div>
           </div>
         </div>
@@ -88,84 +91,136 @@
         </div>
         <center>
           <div class="container lang-container">
-            <div class="row">
+            <center>
+              <div class="row center" style="align-items: center;">
 
-              <!-- HTML5 -->
-              <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">
-                <div class="lang-div">
-                  <div class="html-logo-container">
-                      <i class="fab fa-html5"></i>
+                <!-- HTML5 -->
+                <a class="lang-name" style="text-decoration: none; color: inherit;" href="https://en.wikipedia.org/wiki/HTML" target="_blank">
+                  <div class="lang-div" title="HTML5">
+                    <div class="html-logo-container">
+                        <i class="fab fa-html5"></i>
+                    </div>
                   </div>
-                </div>
-              </a>
+                  <b>HTML</b>
+                </a>
 
-              <!-- CSS3 -->
-              <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">
-                <div class="lang-div">
-                  <div class="css-logo-container">
-                      <i class="fab fa-css3"></i>
+                <!-- CSS3 -->
+                <a class="lang-name" style="text-decoration: none; color: inherit;" href="https://en.wikipedia.org/wiki/CSS" target="_blank">
+                  <div class="lang-div" title="CSS3">
+                    <div class="css-logo-container">
+                        <i class="fab fa-css3"></i>
+                    </div>
                   </div>
-                </div>
-              </a>
+                  <b>CSS</b>
+                </a>
 
-              <!-- JS -->
-              <a href="https://en.wikipedia.org/wiki/JS" target="_blank">
-                <div class="lang-div">
-                  <div class="js-logo-container">
-                      <i class="fab fa-js"></i>
+                <!-- JS -->
+                <a class="lang-name" style="text-decoration: none; color: inherit;" href="https://en.wikipedia.org/wiki/JS" target="_blank">
+                  <div class="lang-div" title="Javascript">
+                    <div class="js-logo-container">
+                        <i class="fab fa-js"></i>
+                    </div>
                   </div>
-                </div>
-              </a>
+                  <b>Javascript</b>
+                </a>
 
-              <!-- Node.js -->
-              <a href="https://en.wikipedia.org/wiki/Node.js" target="_blank">
-                <div class="lang-div">
-                  <div class="node-logo-container">
-                      <i class="fab fa-node-js"></i>
+                <!-- Node.js -->
+                <a class="lang-name" style="text-decoration: none; color: inherit;" href="https://en.wikipedia.org/wiki/Node.js" target="_blank">
+                  <div class="lang-div" title="Node.js">
+                    <div class="node-logo-container">
+                        <i class="fab fa-node-js"></i>
+                    </div>
                   </div>
-                </div>
-              </a>
+                  <b>Node.js</b>
+                </a>
 
-              <!-- Discord.js -->
-              <a href="https://discord.js.org" target="_blank">
-                <div class="lang-div">
-                  <div class="discord-logo-container">
-                      <i class="fab fa-discord"></i>
+                <!-- Discord.js -->
+                <a class="lang-name" style="text-decoration: none; color: inherit;" href="https://discord.js.org" target="_blank">
+                  <div class="lang-div" title="Discord.js">
+                    <div class="discord-logo-container">
+                        <i class="fab fa-discord"></i>
+                    </div>
                   </div>
-                </div>
-              </a>
+                  <b>Discord.js</b>
+                </a>
 
-              <!-- Github -->
-              <a href="https://www.github.com" target="_blank">
-                <div class="lang-div">
-                  <div class="github-logo-container">
-                      <i class="fab fa-github"></i>
+                <!-- Github -->
+                <a class="lang-name" style="text-decoration: none; color: inherit;" href="https://www.github.com" target="_blank">
+                  <div class="lang-div" title="GitHub">
+                    <div class="github-logo-container">
+                        <i class="fab fa-github"></i>
+                    </div>
                   </div>
-                </div>
-              </a>
+                  <b>GitHub</b>
+                </a>
 
-              <!-- PHP -->
-              <a href="https://en.wikipedia.org/wiki/PHP" target="_blank">
-                <div class="lang-div">
-                  <div class="php-logo-container">
-                      <i class="fab fa-php"></i>
+                <!-- PHP -->
+                <a class="lang-name" class="lang-name" style="text-decoration: none; color: inherit;" href="https://en.wikipedia.org/wiki/PHP" target="_blank">
+                  <div class="lang-div" title="PHP7">
+                    <div class="php-logo-container">
+                        <i class="fab fa-php"></i>
+                    </div>
                   </div>
-                </div>
-              </a>
+                  <b>PHP</b>
+                </a>
 
-              <!-- Bootstrap -->
-              <a href="https://www.getbootstrap.com" target="_blank">
-                <div class="lang-div">
-                  <div class="bootstrap-logo-container">
-                      <i class="fab fa-bootstrap"></i>
+                <!-- Bootstrap -->
+                <a class="lang-name" style="text-decoration: none; color: inherit;" href="https://www.getbootstrap.com" target="_blank">
+                  <div class="lang-div" title="Bootstrap 4">
+                    <div class="bootstrap-logo-container">
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
                   </div>
-                </div>
-              </a>
+                  <b>Bootstrap</b>
+                </a>
 
-            </div>
+                <!-- SQL -->
+                <a class="lang-name" style="text-decoration: none; color: inherit;" href="https://en.wikipedia.org/wiki/MySQLi" target="_blank">
+                  <div class="lang-div" title="Sql/MySqli">
+                    <div class="sql-logo-container">
+                        <i class="fas fa-database"></i>
+                    </div>
+                  </div>
+                  <b>MySqli/Sql</b>
+                </a>
+
+                <!-- Python -->
+                <a class="lang-name" style="text-decoration: none; color: inherit;" href="https://www.python.org/" target="_blank">
+                  <div class="lang-div" title="Python 3">
+                    <div class="python-logo-container">
+                        <i class="fab fa-python"></i>
+                    </div>
+                  </div>
+                  <b>Python</b>
+                </a>
+
+                <!-- Java -->
+                <a class="lang-name" style="text-decoration: none; color: inherit;" href="https://www.java.com/en/" target="_blank">
+                  <div class="lang-div" title="Java (still learning!)">
+                    <div class="java-logo-container">
+                        <i class="fab fa-java"></i>
+                    </div>
+                  </div>
+                  <b>Java</b>
+                </a>
+
+                <!-- Git -->
+                <a class="lang-name" style="text-decoration: none; color: inherit;" href="https://git-scm.com/" target="_blank">
+                  <div class="lang-div" title="Git">
+                    <div class="git-logo-container">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                  </div>
+                  <b>Git</b>
+                </a>
+
+              </div>
+            </center>
 
             <div class="container button-container">
               <button class="load-button">Load More...</button>
+              <br />
+              <small>Disclaimer: Still learning Java & Git</small>
             </div>
           </div>
         </center>

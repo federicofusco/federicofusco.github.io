@@ -45,12 +45,13 @@ a img {
 }
 
 body, html {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   background-color: #ffffff;
   color: #484848;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 /* Section One */
@@ -76,12 +77,14 @@ div.section-one-container {
       height: 75%;
       padding-left: 12.5%;
       padding-right: 12.5%;
+      display: inline-block
     }
 
     iframe.discord-widget {
       align: center;
       width: 100%;
       height: 100%;
+      transition: 0.4s;
     }
 
     div.discord-findme {
@@ -96,7 +99,11 @@ div.section-one-container {
       margin-bottom: 2.5%;
       align-items: center;
       width: 100%;
-      height: 8rem;
+      transition: 0.4s;
+    }
+
+    div.discord-findme:hover {
+      background-color: #697ec9;
     }
 
     img.dev-profile {
@@ -108,10 +115,10 @@ div.section-one-container {
       height: 30px;
     }
 
-    h3.discord-findme {
-      line-height: 100%;
-      vertical-align: middle;
-      padding: 2rem;
+    h4.discord-findme {
+      font-size: normal;
+      padding-top: 7%;
+      padding-bottom: 7%;
     }
 
 /* Section 2 */
@@ -122,6 +129,7 @@ div.section-two-container {
   padding-top: 6rem;
   padding-bottom: 6rem;
   width: 100%;
+  margin: 0px;
 }
 
     /* Github Image */
@@ -145,6 +153,13 @@ div.section-two-container {
       padding-left: 15px;
       margin-right: auto;
       margin-left: auto;
+      align-items: center;
+      text-align: center;
+    }
+
+    div.center {
+      align-items: center;
+      text-align: center;
     }
 
     div.html-logo-container {
@@ -188,7 +203,16 @@ div.section-two-container {
     }
 
     div.lang-div {
-      padding: 3rem;
+      padding: 1rem;
+    }
+
+    .lang-name:hover {
+      padding-bottom: 1.5rem;
+    }
+
+    .lang-name {
+      margin-bottom: 3rem;
+      transition: 0.4s;
     }
 
     div.js-logo-container {
@@ -311,6 +335,86 @@ div.section-two-container {
       color: #FFFFFF;
     }
 
+    div.sql-logo-container {
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 50%;
+      border-color: #F27A09;
+      background-color: transparent;
+      color: #F27A09;
+      font-size: 90px;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+
+    div.sql-logo-container:hover {
+      background-color: #F27A09;
+      color: #FFFFFF;
+    }
+
+    div.python-logo-container {
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 50%;
+      border-color: #4b8bbe;
+      background-color: transparent;
+      color: #4b8bbe;
+      font-size: 100px;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+
+    div.python-logo-container:hover {
+      background-color: #4b8bbe;
+      color: #FFFFFF;
+    }
+
+    div.java-logo-container {
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 50%;
+      border-color: #f89820;
+      background-color: transparent;
+      color: #f89820;
+      font-size: 100px;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+
+    div.java-logo-container:hover {
+      background-color: #f89820;
+      color: #FFFFFF;
+    }
+
+    div.git-logo-container {
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 50%;
+      border-color: #F1502F;
+      background-color: transparent;
+      color: #F1502F;
+      font-size: 100px;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+
+    div.git-logo-container:hover {
+      background-color: #F1502F;
+      color: #FFFFFF;
+    }
+
     div.button-container {
       align-items: center;
       text-align: center;
@@ -327,6 +431,7 @@ div.section-two-container {
       color: #6300e4;
       border-color: #6300e4;
       transition: 0.4s;
+
     }
 
     button.load-button:hover {
@@ -410,4 +515,14 @@ div.section-three-container {
 
     a:active {
       text-decoration: none;
+    }
+
+    nav.fixed {
+      position: fixed;
+      z-index: 2;
+      width: 100%;
+    }
+
+    div.widget-background {
+      background-color: blue;
     }
