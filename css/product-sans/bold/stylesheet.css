@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: url('ProductSans-Bold.eot');
+    src: url('ProductSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('ProductSans-Bold.woff2') format('woff2'),
+        url('ProductSans-Bold.woff') format('woff'),
+        url('ProductSans-Bold.svg#ProductSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
